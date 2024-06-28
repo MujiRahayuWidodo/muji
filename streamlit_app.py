@@ -42,7 +42,7 @@
 import streamlit as st 
 import pandas as pd
 # import requests
-# from st_aggrid import AgGrid
+from st_aggrid import AgGrid
 
 def main() : 
     st.write('Minimal Example')
@@ -56,6 +56,8 @@ def main() :
     df = pd.read_csv('house_clean.csv')
     st.write('Contoh dataframe')
     st.dataframe(df)
+    st.write('Menampilkan Dataframe dengan St AgGrid')
+    AgGrid(df)
     jml_row = len(df)
     jml_col = len(df.columns)
     st.metric(label="Jumlah kolom", value=f"{jml_row} rows")
