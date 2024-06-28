@@ -105,8 +105,12 @@ def main() :
     #sidebar 
     with st.form("Data Diri"):
        st.write("Inside the form")
-       slider_val = st.slider("Form slider")
-       checkbox_val = st.checkbox("Form checkbox")
+       slider_val = st.slider('Berapa Usia Anda',0,100)
+       st.write('Anda Memilih',radio_button)
+        
+       checkbox_val = st.checkbox('Klik Jika Setuju')
+       if check_btn :
+           st.write('Anda Setuju')    
 
        # Every form must have a submit button.
        submitted = st.form_submit_button("Submit")
