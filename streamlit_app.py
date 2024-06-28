@@ -94,7 +94,7 @@ def data():
     #     return
         
     st.write('Menampilkan Dataframe dengan St AgGrid')
-    AgGrid(df.head(20))
+    AgGrid(df.sort_values('id', ascending=False).head(20))
 
     col1, col2, col3 = st.columns(3)
     with col1:
