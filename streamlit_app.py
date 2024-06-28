@@ -44,6 +44,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px 
 import matplotlib.pyplot as plt
+from st_aggrid import AgGrid
 
 df = pd.read_csv('house_clean.csv')
 
@@ -88,9 +89,9 @@ def data():
     # uploaded_file = st.file_uploader("Upload file CSV", type=["csv"])
     # df = load_data(uploaded_file)
 
-    if df.empty:
-        st.write("Silakan upload file CSV untuk melihat data.")
-        return
+    # if df.empty:
+    #     st.write("Silakan upload file CSV untuk melihat data.")
+    #     return
         
     st.write('Menampilkan Dataframe dengan St AgGrid')
     AgGrid(df)
