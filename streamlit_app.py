@@ -106,7 +106,7 @@ def main() :
     with st.form("Data Diri"):
        st.write("Inside the form")
        slider_val = st.slider('Berapa Usia Anda',0,100)
-       st.write('Anda Memilih',radio_button)
+       st.write('Anda Memilih',slider_val)
         
        checkbox_val = st.checkbox('Klik Jika Setuju')
        if check_btn :
