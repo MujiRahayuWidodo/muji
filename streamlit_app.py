@@ -56,7 +56,10 @@ def main() :
     df = pd.read_csv('house_clean.csv')
     st.write('Contoh dataframe')
     st.dataframe(df)
-    
+    jml_row = len(df)
+    jml_col = len(df.columns)
+    st.metric(label="Jumlah kolom", value="{jml_row} rows")
+    st.metric(label="Jumlah row", value="{jml_data} rows")
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
 if __name__ == '__main__' : 
