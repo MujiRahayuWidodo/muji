@@ -39,10 +39,12 @@
 #         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
 #     ))
 
+$ pip install plotly
 import streamlit as st 
 import pandas as pd
-import plotly.express as px 
-import matplotlib.pyplot as plt
+
+# import plotly.express as px 
+# import matplotlib.pyplot as plt
 
 def main() : 
     st.write('Minimal Example')
@@ -65,11 +67,11 @@ def main() :
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
     
-    fig,ax = plt.subplots()
-    plt.scatter(titanic['Age'],titanic['Fare'])
-    st.pyplot(fig)
-    plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
-    st.plotly_chart(plotly_fig)
+    # fig,ax = plt.subplots()
+    # plt.scatter(titanic['Age'],titanic['Fare'])
+    # st.pyplot(fig)
+    # plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
+    # st.plotly_chart(plotly_fig)
 
 if __name__ == '__main__' : 
   main()
