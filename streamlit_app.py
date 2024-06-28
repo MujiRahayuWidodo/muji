@@ -63,10 +63,10 @@ def main() :
     #     data()
     # elif menu == "Profile":
     #     profile()
-def load_data(file):
-    if file is not None:
-        return pd.read_csv(file)
-    return pd.DataFrame()
+# def load_data(file):
+#     if file is not None:
+#         return pd.read_csv(file)
+#     return pd.DataFrame()
     
 def data():
     st.title("Home")
@@ -82,10 +82,10 @@ def data():
     st.latex('c^2 = a^2+b^2')
     
     st.write('Contoh dataframe')
-    # st.dataframe(df)
+    st.dataframe(df)
     # Upload dataset
-    uploaded_file = st.file_uploader("Upload file CSV", type=["csv"])
-    df = load_data(uploaded_file)
+    # uploaded_file = st.file_uploader("Upload file CSV", type=["csv"])
+    # df = load_data(uploaded_file)
 
     if df.empty:
         st.write("Silakan upload file CSV untuk melihat data.")
