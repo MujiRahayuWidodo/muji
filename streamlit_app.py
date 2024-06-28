@@ -41,8 +41,8 @@
 
 import streamlit as st 
 import pandas as pd
-import requests
-from st_aggrid import AgGrid
+# import requests
+# from st_aggrid import AgGrid
 
 def main() : 
 #   st.write('Minimal Example')
