@@ -70,8 +70,6 @@ def main() :
     fig,ax = plt.subplots()
     plt.scatter(df['bedrooms'],df['price'])
     st.pyplot(fig)
-
-    st.write('bedrooms vs price')
     plotly_fig = px.scatter(df['bedrooms'],df['price'])
     st.plotly_chart(plotly_fig)
 
