@@ -39,7 +39,6 @@
 #         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
 #     ))
 
-pip install plotly
 
 import streamlit as st 
 import pandas as pd
@@ -59,8 +58,8 @@ def main() :
     df = pd.read_csv('house_clean.csv')
     st.write('Contoh dataframe')
     st.dataframe(df)
-    # st.write('Menampilkan Dataframe dengan St AgGrid')
-    # AgGrid(df)
+    st.write('Menampilkan Dataframe dengan St AgGrid')
+    AgGrid(df)
     jml_row = len(df)
     jml_col = len(df.columns)
     st.metric(label="Jumlah kolom", value=f"{jml_row} rows")
