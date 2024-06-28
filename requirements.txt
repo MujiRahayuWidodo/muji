@@ -1,6 +1,5 @@
 altair
 pandas
 streamlit
-st_aggrid
 plotly
 matplotlib
