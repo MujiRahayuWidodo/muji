@@ -61,6 +61,12 @@ def data():
     st.write("Selamat datang di halaman Home!")
     st.write("Di sini Anda dapat menambahkan konten untuk halaman Home Anda.")
     # Tambahkan konten halaman Home di sini
+
+def profile():
+    st.title("Data Overview")
+    st.write("Ini adalah halaman Profile.")
+    st.write("Di sini Anda dapat menambahkan konten untuk halaman Profile Anda.")
+    # Tambahkan konten halaman Profile di sini
         
     st.write('Minimal Example')
     
@@ -151,12 +157,6 @@ def data():
     #dengan with atau dengan assignment 
     expander = st.expander("Klik Untuk Detail ")
     expander.write('Anda Telah Membuka Detail')
-
-def profile():
-    st.title("Data Overview")
-    st.write("Ini adalah halaman Profile.")
-    st.write("Di sini Anda dapat menambahkan konten untuk halaman Profile Anda.")
-    # Tambahkan konten halaman Profile di sini
     
 
 if __name__ == '__main__' : 
