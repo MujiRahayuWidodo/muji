@@ -58,8 +58,8 @@ def main() :
     df = pd.read_csv('house_clean.csv')
     st.write('Contoh dataframe')
     st.dataframe(df)
-    st.write('Menampilkan Dataframe dengan St AgGrid')
-    AgGrid(df)
+    # st.write('Menampilkan Dataframe dengan St AgGrid')
+    # AgGrid(df)
     jml_row = len(df)
     jml_col = len(df.columns)
     st.metric(label="Jumlah kolom", value=f"{jml_row} rows")
@@ -67,11 +67,11 @@ def main() :
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
     
-    # fig,ax = plt.subplots()
-    # plt.scatter(titanic['Age'],titanic['Fare'])
-    # st.pyplot(fig)
-    # plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
-    # st.plotly_chart(plotly_fig)
+    fig,ax = plt.subplots()
+    plt.scatter(titanic['Age'],titanic['Fare'])
+    st.pyplot(fig)
+    plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
+    st.plotly_chart(plotly_fig)
 
 if __name__ == '__main__' : 
   main()
