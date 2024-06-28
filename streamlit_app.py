@@ -42,9 +42,10 @@
 
 import streamlit as st 
 import pandas as pd
+import plotly.express as px 
+import matplotlib.pyplot as plt
 
-# import plotly.express as px 
-# import matplotlib.pyplot as plt
+df = pd.read_csv('house_clean.csv')
 
 def main() : 
     st.write('Minimal Example')
@@ -55,7 +56,6 @@ def main() :
     st.write('Some Phytagorean Equation : ')
     st.latex('c^2 = a^2+b^2')
     
-    df = pd.read_csv('house_clean.csv')
     st.write('Contoh dataframe')
     st.dataframe(df)
     # st.write('Menampilkan Dataframe dengan St AgGrid')
