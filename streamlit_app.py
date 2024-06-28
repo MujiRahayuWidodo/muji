@@ -60,11 +60,16 @@ def main() :
     st.dataframe(df)
     # st.write('Menampilkan Dataframe dengan St AgGrid')
     # AgGrid(df)
-    jml_row = len(df)
-    jml_col = len(df.columns)
-    st.metric(label="Jumlah kolom", value=f"{jml_row} rows")
-    st.metric(label="Jumlah row", value=f"{jml_col} rows")
-    st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        jml_row = len(df)
+        st.metric(label="Jumlah kolom", value=f"{jml_row} rows")
+    with col2:    
+        jml_col = len(df.columns)
+        st.metric(label="Jumlah row", value=f"{jml_col} rows")
+    with col3:    
+        st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
     st.write('bedrooms vs price')
     fig,ax = plt.subplots()
