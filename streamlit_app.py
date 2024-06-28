@@ -39,7 +39,7 @@
 #         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
 #     ))
 
-# import streamlit as st 
+import streamlit as st 
 
 # def main() : 
 # #   st.write('Minimal Example')
@@ -57,5 +57,18 @@
 import pandas as pd
 
 df = pd.read_csv('house_clean.csv')
-df.head()
+st.data_editor(df)
+
+favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
+st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
+
+
+
+
+
+
+
+
+
+
 
