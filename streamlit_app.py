@@ -62,6 +62,13 @@ def main() :
     st.metric(label="Jumlah row", value=f"{jml_col} rows")
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
+    
+    fig,ax = plt.subplots()
+    plt.scatter(titanic['Age'],titanic['Fare'])
+    st.pyplot(fig)
+    plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
+    st.plotly_chart(plotly_fig)
+
 if __name__ == '__main__' : 
   main()
 
