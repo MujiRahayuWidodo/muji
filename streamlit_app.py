@@ -38,6 +38,7 @@
 #         color=alt.Color("idx", legend=None, scale=alt.Scale()),
 #         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
 #     ))
+! pip install streamlit-aggrid
 
 import streamlit as st 
 import pandas as pd
