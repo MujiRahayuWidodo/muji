@@ -66,12 +66,14 @@ def main() :
     st.metric(label="Jumlah row", value=f"{jml_col} rows")
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
-    
+    st.write('bedrooms vs price')
     fig,ax = plt.subplots()
     plt.scatter(df['bedrooms'],df['price'])
-    st.pyplot(label="bedrooms vs price", fig)
+    st.pyplot(fig)
+
+    st.write('bedrooms vs price')
     plotly_fig = px.scatter(df['bedrooms'],df['price'])
-    st.plotly_chart(label="bedrooms vs price", plotly_fig)
+    st.plotly_chart(plotly_fig)
 
 if __name__ == '__main__' : 
   main()
