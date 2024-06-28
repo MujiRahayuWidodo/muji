@@ -72,8 +72,8 @@ def main() :
         st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
     col1, col2 = st.columns(2)
+    st.write('bedrooms vs price')
     with col1:
-        st.write('bedrooms vs price')
         fig,ax = plt.subplots()
         plt.scatter(df['bedrooms'],df['price'])
     with col2:    
