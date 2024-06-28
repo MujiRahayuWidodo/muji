@@ -80,7 +80,8 @@ def data():
     st.markdown('# Rendering Markdown ')
     st.write('Some Phytagorean Equation : ')
     st.latex('c^2 = a^2+b^2')
-    
+
+    # set dataframe
     st.write('Contoh dataframe')
     st.dataframe(df)
     # Upload dataset
@@ -91,8 +92,8 @@ def data():
         st.write("Silakan upload file CSV untuk melihat data.")
         return
         
-    # st.write('Menampilkan Dataframe dengan St AgGrid')
-    # AgGrid(df)
+    st.write('Menampilkan Dataframe dengan St AgGrid')
+    AgGrid(df)
 
     col1, col2, col3 = st.columns(3)
     with col1:
