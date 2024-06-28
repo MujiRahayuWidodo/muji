@@ -3,4 +3,4 @@ pandas
 streamlit
 plotly
 matplotlib
-streamlit_aggrid
+streamlit-aggrid
