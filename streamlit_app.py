@@ -71,12 +71,15 @@ def main() :
     with col3:    
         st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
-    st.write('bedrooms vs price')
-    fig,ax = plt.subplots()
-    plt.scatter(df['bedrooms'],df['price'])
-    st.pyplot(fig)
-    plotly_fig = px.scatter(df['bedrooms'],df['price'])
-    st.plotly_chart(plotly_fig)
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write('bedrooms vs price')
+        fig,ax = plt.subplots()
+        plt.scatter(df['bedrooms'],df['price'])
+    with col2:    
+        st.pyplot(fig)
+        plotly_fig = px.scatter(df['bedrooms'],df['price'])
+        st.plotly_chart(plotly_fig)
 
     click_me_btn = st.button('Click Me')
     st.write(click_me_btn) #Return True kalo di Click 
