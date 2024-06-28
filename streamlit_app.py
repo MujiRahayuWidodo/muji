@@ -41,6 +41,8 @@
 
 import streamlit as st 
 import pandas as pd
+import plotly.express as px 
+import matplotlib.pyplot as plt
 
 def main() : 
     st.write('Minimal Example')
