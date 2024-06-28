@@ -120,8 +120,8 @@ def data():
     st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
 
     #sidebar 
-    sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
     sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
+    sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
 
     #sidebar 
     with st.form("Data Diri"):
