@@ -60,8 +60,8 @@ def main() :
     # st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
     # st.write('Menampilkan Dataframe dengan St AgGrid')
     # AgGrid(titanic)
-    # st.table([x for x in range(1, 5)])
-    # st.data_editor(df)
+    st.table([x for x in range(1, 5)])
+    st.data_editor(df)
 
 if __name__ == '__main__' : 
   main()
