@@ -39,7 +39,8 @@
 #         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
 #     ))
 
-$ pip install plotly
+pip install plotly
+
 import streamlit as st 
 import pandas as pd
 
