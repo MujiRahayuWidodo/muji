@@ -56,18 +56,11 @@ def main() :
     elif menu == "Profile":
         show_profile()
 
-def show_home():
+def data():
     st.title("Home")
     st.write("Selamat datang di halaman Home!")
     st.write("Di sini Anda dapat menambahkan konten untuk halaman Home Anda.")
     # Tambahkan konten halaman Home di sini
-
-def show_profile():
-    st.title("Profile")
-    st.write("Ini adalah halaman Profile.")
-    st.write("Di sini Anda dapat menambahkan konten untuk halaman Profile Anda.")
-    # Tambahkan konten halaman Profile di sini
-
         
     st.write('Minimal Example')
     
@@ -158,6 +151,12 @@ def show_profile():
     #dengan with atau dengan assignment 
     expander = st.expander("Klik Untuk Detail ")
     expander.write('Anda Telah Membuka Detail')
+
+def profile():
+    st.title("Data Overview")
+    st.write("Ini adalah halaman Profile.")
+    st.write("Di sini Anda dapat menambahkan konten untuk halaman Profile Anda.")
+    # Tambahkan konten halaman Profile di sini
     
 
 if __name__ == '__main__' : 
