@@ -93,6 +93,14 @@ def main() :
     #slider 
     age_slider = st.slider('Berapa Usia Anda',0,100)
     st.write('Usia Anda',age_slider)
+    
+    #Input (Typing)
+    num_input = st.number_input('Input Berapapun')
+    st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
+
+    #sidebar 
+    sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
+    sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
 
     #sidebar 
     with st.form("Data Diri"):
@@ -106,14 +114,6 @@ def main() :
            st.write("slider", slider_val, "checkbox", checkbox_val)
 
     st.write("Outside the form")
-    
-    #Input (Typing)
-    num_input = st.number_input('Input Berapapun')
-    st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
-
-    #sidebar 
-    sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
-    sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
     
     #columns :
     col1, col2, col3 = st.columns(3)
