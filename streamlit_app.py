@@ -48,6 +48,27 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('house_clean.csv')
 
 def main() : 
+    st.sidebar.title("Menu")
+    menu = st.sidebar.selectbox("Pilih halaman:", ["Home", "Profile"])
+
+    if menu == "Home":
+        show_home()
+    elif menu == "Profile":
+        show_profile()
+
+def show_home():
+    st.title("Home")
+    st.write("Selamat datang di halaman Home!")
+    st.write("Di sini Anda dapat menambahkan konten untuk halaman Home Anda.")
+    # Tambahkan konten halaman Home di sini
+
+def show_profile():
+    st.title("Profile")
+    st.write("Ini adalah halaman Profile.")
+    st.write("Di sini Anda dapat menambahkan konten untuk halaman Profile Anda.")
+    # Tambahkan konten halaman Profile di sini
+
+        
     st.write('Minimal Example')
     
     st.header('This is Header')
